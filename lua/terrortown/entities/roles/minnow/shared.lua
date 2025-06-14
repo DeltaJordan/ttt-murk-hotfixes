@@ -7,6 +7,7 @@ function ROLE:PreInitialize()
     self.score.killsMultiplier = 0
     self.score.teamKillsMultiplier = 0
     self.unknownTeam = true
+    self.notSelectable = true
 end
 
 if SERVER then
