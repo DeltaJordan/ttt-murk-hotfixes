@@ -1,1 +1,0 @@
-net.Receive("MVP_MapVotePoolsBallot", function() if IsValid(MapVotePools.Panel) then MapVotePools.Panel:SetVisible(true) end end)
