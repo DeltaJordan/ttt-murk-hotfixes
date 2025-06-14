@@ -1,6 +1,6 @@
 CreateConVar("ttt2_sharks_minnows", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY})
 cvars.AddChangeCallback("ttt2_sharks_minnows", function(convarName, oldValue, newValue)
-    if newValue == 1 then
+    if GetConVar("ttt2_sharks_minnows"):GetBool() then
         GetConVar("ttt2_max_melee_slots"):SetInt(1)
         GetConVar("ttt2_max_secondary_slots"):SetInt(0)
         GetConVar("ttt2_max_primary_slots"):SetInt(0)
