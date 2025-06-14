@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture"	"vgui/ttt/icon_minnow"
+	"$basetexture"	"vgui/ttt/dynamic/roles/icon_minnow"
 	"$translucent" "1"
 	"$ignorez" "1"
 	"$vertexcolor" "1"

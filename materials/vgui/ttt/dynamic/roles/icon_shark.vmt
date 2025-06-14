@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture"	"vgui/ttt/icon_shark"
+	"$basetexture"	"vgui/ttt/dynamic/roles/icon_shark"
 	"$translucent" "1"
 	"$ignorez" "1"
 	"$vertexcolor" "1"
