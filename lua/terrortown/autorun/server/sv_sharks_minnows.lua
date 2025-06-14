@@ -12,9 +12,9 @@ hook.Add("TTT2ModifyFinalRoles", "MURKSharksMinnows", function(finalRoles)
     table.Shuffle(players)
     for _, ply in pairs(players) do
         if IsTraitor(finalRoles[ply]) or finalRoles[ply] == ROLE_SERIALKILLER or finalRoles[ply] == ROLE_INFECTED then
-            finalRoles[ply] = ROLE_TRAITOR
+            finalRoles[ply] = ROLE_SHARK
         else
-            finalRoles[ply] = ROLE_INNOCENT
+            finalRoles[ply] = ROLE_MINNOW
         end
     end
 end)
