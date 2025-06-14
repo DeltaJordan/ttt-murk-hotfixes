@@ -40,10 +40,14 @@ hook.Add("TTT2ModifyFinalRoles", "MURKSharksMinnows", function(finalRoles)
 end)
 
 hook.Add("TTTBeginRound", "MURK_SMRemoveCrowbar", function()
+    if not GetConVar("ttt2_sharks_minnows"):GetBool() then return end
     GetConVar("ttt2_max_melee_slots"):SetInt(0)
     for _, ply in pairs(player.GetAll()) do
         if ply:GetSubRole() == ROLE_MINNOW then ply:RemoveEquipmentWeapon("weapon_zm_improvised") end
     end
 end)
 
-hook.Add("TTTEndRound", "MURK_SMResetLoadout", function() GetConVar("ttt2_max_melee_slots"):SetInt(1) end)
+hook.Add("TTTEndRound", "MURK_SMResetLoadout", function()
+    if not GetConVar("ttt2_sharks_minnows"):GetBool() then return end
+    GetConVar("ttt2_max_melee_slots"):SetInt(1)
+end)

@@ -1,8 +1,4 @@
-if SERVER then
-    resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_shark.vmt")
-    resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_shark.vtf")
-end
-
+if SERVER then resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_shark.vmt") end
 ROLE.Base = "ttt_role_base"
 ROLE.index = ROLE_SHARK
 function ROLE:PreInitialize()
