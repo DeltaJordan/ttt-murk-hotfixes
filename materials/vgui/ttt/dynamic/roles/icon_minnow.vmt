@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture"	"vgui/ttt/shark"
+	"$basetexture"	"vgui/ttt/icon_minnow"
 	"$translucent" "1"
 	"$ignorez" "1"
 	"$vertexcolor" "1"

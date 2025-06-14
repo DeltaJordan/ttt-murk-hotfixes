@@ -1,3 +1,8 @@
+if SERVER then
+    resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_minnow.vmt")
+    resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_minnow.vtf")
+end
+
 ROLE.Base = "ttt_role_base"
 ROLE.index = ROLE_MINNOW
 function ROLE:PreInitialize()
